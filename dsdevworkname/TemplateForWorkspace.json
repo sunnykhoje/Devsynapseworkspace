@@ -34,7 +34,7 @@
 	},
 	"resources": [
 		{
-			"name": "[concat(parameters('workspaceName'), '/csvpipelines')]",
+			"name": "[concat(parameters('workspaceName'), '/csvpipelines12')]",
 			"type": "Microsoft.Synapse/workspaces/pipelines",
 			"apiVersion": "2019-06-01-preview",
 			"properties": {
