@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"workspaceName": {
+			"value": "dsdevworkname"
+		},
+		"dsdevworkname-WorkspaceDefaultSqlServer_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=tcp:dsdevworkname.sql.azuresynapse.net,1433;Initial Catalog=@{linkedService().DBName}"
+		},
+		"dsdevworkname-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://dlsdevaccount12.dfs.core.windows.net"
+		},
+		"inputlinkedserver_properties_typeProperties_url": {
+			"value": "https://dlsdevaccount12.dfs.core.windows.net"
+		},
+		"lskeydevvaultstorage_properties_typeProperties_baseUrl": {
+			"value": "https://kvdevdls.vault.azure.net/"
+		},
+		"outputlinkedserver_properties_typeProperties_url": {
+			"value": "https://dlsdevaccount12.dfs.core.windows.net"
+		}
+	}
+}
