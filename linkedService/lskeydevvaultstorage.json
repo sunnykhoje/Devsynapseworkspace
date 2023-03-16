@@ -1,0 +1,11 @@
+{
+	"name": "lskeydevvaultstorage",
+	"type": "Microsoft.Synapse/workspaces/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://kvdevdls.vault.azure.net/"
+		}
+	}
+}
